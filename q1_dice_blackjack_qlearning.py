@@ -156,3 +156,9 @@ if __name__ == "__main__":
     avg = evaluate_policy(q, episodes=100)
     print(f"Average reward over 100 evaluation episodes: {avg:.3f}")
     describe_learned_policy(q)
+
+# Learned Policy Description: 
+# The learned policy exhibits a clear threshold behavior. 
+# The agent consistently chooses to Hit when the accumulated sum is below 6 and switches to Stay once the sum reaches approximately 6 or higher. 
+# This threshold strategy reflects a trade-off between increasing the expected reward by rolling the die and minimizing the risk of busting when the sum becomes too large. 
+# The resulting behavior aligns with intuitive decision-making in this simplified Blackjack setting.")
